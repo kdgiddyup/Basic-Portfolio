@@ -1,6 +1,7 @@
 body {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color: #777;
+	background-image: url('../images/cork-wallet.png');
 }
 a {
 	color: #777;
@@ -13,6 +14,9 @@ header {
 	height: 90px;
 	border-bottom: 3px solid #e7e7e7;
 }
+header, article, aside {
+	background-color: #fff;
+}
 #header {
 	max-width: 960px;
 	position: relative;
@@ -21,7 +25,7 @@ header {
 
 #section1 {
 margin: 40px 0 0 0;
-background-image: url('assets/images/cork-wallet.png');
+
 padding: 0 0 40px 0;
 }
 
@@ -74,6 +78,7 @@ article {
 	border: 2px solid #e7e7e7;
 	padding: 35px 30px;
 	overflow: auto;
+	background-color: #fff;
 }
 #about_me h2, #contact_area h2, #portfolio_area h2 {
 	color: #4aaaa5;
