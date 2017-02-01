@@ -138,6 +138,8 @@ footer {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+	opacity: .85;
+	box-shadow: 0 15px 80px #000;
 }
 
 /* styles specific to contact page */
