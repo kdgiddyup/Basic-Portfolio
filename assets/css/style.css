@@ -15,10 +15,11 @@ header {
 	position: relative;
 	left: 156px;
 }
+
 #section1 {
-overflow: auto;
 margin: 40px 0 0 0;
 background-image: url('assets/images/cork-wallet.png');
+padding: 0 0 40px 0;
 }
 
 #name_container {
@@ -34,7 +35,7 @@ background-image: url('assets/images/cork-wallet.png');
 #name_container h2 {
 	padding: 30px 0;
 }
-h2 {
+h2, .portfolio_label {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 .vert_separator {
@@ -58,16 +59,17 @@ font-size: 18px;
 .nav_link a {
 	color: #999999;
 }
-#main_rail {
+article {
 	width: 650px;
 	float: left;
 	margin: 0 0 0 156px;
 }
-#about_me {		
+#about_me, #contact_area, #portfolio_area {		
 	border: 2px solid #e7e7e7;
 	padding: 35px 30px;
+	overflow: auto;
 }
-#about_me h2 {
+#about_me h2, #contact_area h2, #portfolio_area h2 {
 	color: #4aaaa5;
 	font-size: 30px;
 	font-weight: bold;
@@ -89,7 +91,7 @@ font-size: 18px;
 	margin: 0;
 	padding: 0;
 }
-#right_rail {
+aside {
 	width: 270px;
 	float: left;
 	margin: 0 0 0 40px;
@@ -114,6 +116,19 @@ margin: 0 5px 0 0;
 height: 60px;
 width: 60px;
 }
+footer {
+	border-top: 10px solid #4aaaa5;
+	margin: 40px 0 0 0;
+	text-align: center;
+	padding: 40px 0;
+	background-color: #666;
+	color: #e7e7e7;
+	font-size: 12px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
 /* styles specific to contact page */
 #contact_form input, #contact_form textarea {
 	width: 100%;
@@ -132,12 +147,35 @@ button {
 	font-size: 18px;
 	border: none;
 }
-footer {
-	border-top: 10px solid #4aaaa5;
-	margin: 40px 0 0 0;
+
+/* styles specific to portfolio page */
+.portfolio_thumb {
+	margin: 20px 0 60px 0;
+	width: 275px;
+	height: 195px;
+	padding: 0;
+	position: relative;
+}
+.portfolio_thumb img {
+	height: 100%;
+	width: 100%;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.portfolio_label {
+	background-color: #4aaaa5;
+	color: #fff;
+	font-size: 24px;
 	text-align: center;
-	padding: 40px 0;
-	background-color: #666;
-	color: #e7e7e7;
-	font-size: 12px;
+	padding: 20px 0;
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+}
+.clear {
+	overflow: auto;
 }
